@@ -9,7 +9,7 @@ toHex :: Char -> Word8
 toHex ch = fromIntegral $ digitToInt ch
 
 toChar :: Word8 -> Char
-toChar = intToDigit.fromIntegral
+toChar = intToDigit . fromIntegral
 
 hexChXor :: Char -> Char -> Char
 hexChXor ch1 ch2
